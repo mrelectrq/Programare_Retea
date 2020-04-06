@@ -1,0 +1,28 @@
+Future
+ThreadPool
+
+
+
+
+
+Laborator 2 
+2)SMTP + POP/IMAP
+	(GUI) pentru 10
+transmis mesaj, parsare mesaj
+
+Laborator 3 
+HTTP 
+
+
+Laborator 4
+Client-Server TCP
+(Socket)
+FTP
+
+Laborator 5
+Client-Server
+
+UDP (socket)
+
+--------------------------------------
+
