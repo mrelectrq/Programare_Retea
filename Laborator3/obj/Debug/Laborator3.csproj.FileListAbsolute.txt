@@ -1,0 +1,7 @@
+D:\Univer\Programarea_Retea\Laborator3\bin\Debug\Laborator3.exe.config
+D:\Univer\Programarea_Retea\Laborator3\bin\Debug\Laborator3.exe
+D:\Univer\Programarea_Retea\Laborator3\bin\Debug\Laborator3.pdb
+D:\Univer\Programarea_Retea\Laborator3\obj\Debug\Laborator3.csprojAssemblyReference.cache
+D:\Univer\Programarea_Retea\Laborator3\obj\Debug\Laborator3.csproj.CoreCompileInputs.cache
+D:\Univer\Programarea_Retea\Laborator3\obj\Debug\Laborator3.exe
+D:\Univer\Programarea_Retea\Laborator3\obj\Debug\Laborator3.pdb
