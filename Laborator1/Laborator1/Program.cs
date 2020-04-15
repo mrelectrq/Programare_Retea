@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -30,7 +31,7 @@ namespace Laborator1
         static void Main(string[] args)
         {
 
-            _pool = new Semaphore(0, 3);
+            _pool = new Semaphore(4, 4);
             TcpClient client = new TcpClient("81.180.74.23", 443);
 
             SslStream ssl = new SslStream(
@@ -59,8 +60,8 @@ namespace Laborator1
             byte[] buffer = new byte[2048];
             
             string request_url = "GET / HTTP/1.1\r\n" +
-"Host: utm.md\r\n\r\n"+
-    "Accept: *\r\n\r\n";
+            "Host: utm.md\r\n\r\n"+
+            "Accept: *\r\n\r\n";
 
 
             byte[] request = Encoding.UTF8.GetBytes(String.Format(request_url));
@@ -68,8 +69,8 @@ namespace Laborator1
             //ssl.Write(request, 0, request.Length);
             //ssl.Write(Encoding.UTF8.GetBytes("\r\n"));
             ssl.Flush();
-            bool state = ssl.IsAuthenticated;
-            IPAddress host = IPAddress.Parse("81.180.74.2");
+            //bool state = ssl.IsAuthenticated;
+            //IPAddress host = IPAddress.Parse("81.180.74.2");
             //IPEndPoint hostep = new IPEndPoint(host, 443);
             // Socket sock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
@@ -115,9 +116,9 @@ namespace Laborator1
                 
             }
             //SaveImage(list[5]);
-            Thread.Sleep(500);
+           // Thread.Sleep(500);
 
-            _pool.Release(3);
+            //_pool.Release(3);
             Console.ReadKey();
 
         }
@@ -125,7 +126,33 @@ namespace Laborator1
 
         public static void SaveImage(object name_path)
         {
+            TcpClient client = new TcpClient("81.180.74.23", 443);
+
+            SslStream ssl = new SslStream(
+                client.GetStream(),
+                false,
+                new RemoteCertificateValidationCallback(ValidateServerCertificate),
+                null
+                );
+
+            try
+            {
+                ssl.AuthenticateAsClient("utm.md");
+            }
+            catch (AuthenticationException e)
+            {
+                Console.WriteLine("Exception: {0}", e.Message);
+                if (e.InnerException != null)
+                {
+                    Console.WriteLine("Inner exception: {0}", e.InnerException.Message);
+                }
+                Console.WriteLine("Authentication failed - closing the connection.");
+                client.Close();
+                return;
+            }
+
             Console.WriteLine("Thread {0} sa initializat si asteapta semaforul----------------", (string)name_path);
+            _pool.WaitOne();
             string data = (string)name_path;
             string data1=data.Replace(@"\\", "");
             string data2 = data1.Replace(@"/", "");
@@ -135,40 +162,58 @@ namespace Laborator1
 
             int padding = Interlocked.Add(ref _padding, 100);
 
-            var saveLocation = $@"D:\img\{ data3+padding.ToString()}.png";
+            var saveLocation = $@"D:\img\{ padding.ToString()+data3}";
             
 
             byte[] imageBytes;
 
-            HttpWebRequest imageRequest = (HttpWebRequest)WebRequest.Create("https://utm.md/"+(string)name_path);
-            
-            
-            WebResponse imageResponse = imageRequest.GetResponse();
-            _pool.WaitOne();
+            byte[] buffer = new byte[2048];
 
-            Stream responseStream = imageResponse.GetResponseStream();
+            var request_img = "GET https://utm.md/" + (string)name_path + " HTTP/1.1\r\n" +
+            "Host: utm.md\r\n" +
+            "Content-Lenght: 0 \r\n"
+            + "\r\n";
 
-            using (BinaryReader br = new BinaryReader(responseStream))
-            {
-                imageBytes = br.ReadBytes(500000);
-                br.Close();
-            }
-            responseStream.Close();
-            imageResponse.Close();
-            Thread.Sleep(500 + padding);
-            Console.WriteLine("Thread {0} a intrat in semafor----------------", (string)name_path);
-            FileStream fs = new FileStream(saveLocation, FileMode.Create);
-            BinaryWriter bw = new BinaryWriter(fs);
-            try
-            {
-                bw.Write(imageBytes);
-            }
-            finally
-            {
-                fs.Close();
-                bw.Close();
-            }
+            byte[] message = Encoding.UTF8.GetBytes(request_img);
+            ssl.Write(message, 0, message.Length);
+            ssl.Flush();
 
+            int bytes = -1;
+            int i = 0;
+            StringBuilder messageData = new StringBuilder();
+            var resp = new List<byte>();
+            do
+            {
+                bytes = ssl.Read(buffer, 0, buffer.Length);
+                Decoder decoder = Encoding.UTF8.GetDecoder();
+                char[] chars = new char[decoder.GetCharCount(buffer, 0, buffer.Length)];
+
+                decoder.GetChars(buffer, 0, bytes, chars, 0);
+                if (i >= 1)
+                {
+
+                    resp.AddRange(buffer);
+                    messageData.Append(chars);
+                }
+                i++;
+                if (messageData.ToString().IndexOf("<EOF>") != -1)
+                {
+                    break;
+                }
+                // i = ssl.ReadByte();
+                //Console.WriteLine(Encoding.UTF8.GetString(buffer, 0, bytes));
+            } while (bytes != 0);
+
+           // Console.WriteLine(messageData.ToString());
+
+            var img = resp.ToArray();
+            Bitmap bmp;
+            using (var ms = new MemoryStream(img))
+            {
+                // ms.Seek(0, SeekOrigin.Begin);
+                bmp = new Bitmap(ms);
+                bmp.Save(saveLocation);
+            }
             Console.WriteLine("Thread {0} sa realizat in semafor ----------------{1}", (string)name_path, _pool.Release()); 
         }
     }
