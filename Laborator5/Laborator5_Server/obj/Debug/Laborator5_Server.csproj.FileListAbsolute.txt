@@ -1,0 +1,11 @@
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\obj\Debug\Laborator5_Server.csprojAssemblyReference.cache
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\obj\Debug\Laborator5_Server.Form1.resources
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\obj\Debug\Laborator5_Server.Form2.resources
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\obj\Debug\Laborator5_Server.Properties.Resources.resources
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\obj\Debug\Laborator5_Server.csproj.GenerateResource.cache
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\obj\Debug\Laborator5_Server.csproj.CoreCompileInputs.cache
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\bin\Debug\Laborator5_Server.exe.config
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\bin\Debug\Laborator5_Server.exe
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\bin\Debug\Laborator5_Server.pdb
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\obj\Debug\Laborator5_Server.exe
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Server\obj\Debug\Laborator5_Server.pdb

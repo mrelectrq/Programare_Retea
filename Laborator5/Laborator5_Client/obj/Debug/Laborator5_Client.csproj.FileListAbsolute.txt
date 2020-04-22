@@ -1,0 +1,10 @@
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\bin\Debug\Laborator5_Client.exe.config
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\bin\Debug\Laborator5_Client.exe
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\bin\Debug\Laborator5_Client.pdb
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\obj\Debug\Laborator5_Client.csprojAssemblyReference.cache
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\obj\Debug\Laborator5_Client.Form1.resources
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\obj\Debug\Laborator5_Client.Properties.Resources.resources
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\obj\Debug\Laborator5_Client.csproj.GenerateResource.cache
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\obj\Debug\Laborator5_Client.csproj.CoreCompileInputs.cache
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\obj\Debug\Laborator5_Client.exe
+D:\Univer\Programarea_Retea\Laborator5\Laborator5_Client\obj\Debug\Laborator5_Client.pdb
