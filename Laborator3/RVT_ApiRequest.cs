@@ -17,8 +17,8 @@ namespace Laborator3
         private static HttpClient client;
        public RVT_ApiRequest()
         {
-            var cert = new X509Certificate2(Path.Combine
-    ("D:\\C#_projects\\Remote_Vote_System\\Certs\\WebCert", "web-certificate.pfx"), "ar4iar4i");
+    //        var cert = new X509Certificate2(Path.Combine
+    //("D:\\C#_projects\\Remote_Vote_System\\Certs\\WebCert", "web-certificate.pfx"), "ar4iar4i");
             //var proxy = new WebProxy()
             //{
             //    Address = new Uri($"http://50.226.151.5:80"),
@@ -27,14 +27,14 @@ namespace Laborator3
             //};   
 
 
-            handler.ClientCertificates.Add(cert);
+            //handler.ClientCertificates.Add(cert);
             handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
             handler.AllowAutoRedirect = true;
             //handler.Proxy = proxy;
             client = new HttpClient(handler);
             client.BaseAddress = new Uri("https://localhost:44383/");
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            handler.CookieContainer.Add(new Cookie("session_id", "4eec00020f8b76651015fb7118b63b02","/"));
+            //handler.CookieContainer.Add(new Cookie("session_id", "4eec00020f8b76651015fb7118b63b02","/"));
             
         }
 

@@ -1,0 +1,13 @@
+D:\Univer\Programarea_Retea\Laborator4_Voice\bin\Debug\Laborator4_Voice.exe.config
+D:\Univer\Programarea_Retea\Laborator4_Voice\bin\Debug\Laborator4_Voice.exe
+D:\Univer\Programarea_Retea\Laborator4_Voice\bin\Debug\Laborator4_Voice.pdb
+D:\Univer\Programarea_Retea\Laborator4_Voice\bin\Debug\NAudio.dll
+D:\Univer\Programarea_Retea\Laborator4_Voice\bin\Debug\NAudio.xml
+D:\Univer\Programarea_Retea\Laborator4_Voice\obj\Debug\Laborator4_Voice.csprojAssemblyReference.cache
+D:\Univer\Programarea_Retea\Laborator4_Voice\obj\Debug\Laborator4_Voice.Form1.resources
+D:\Univer\Programarea_Retea\Laborator4_Voice\obj\Debug\Laborator4_Voice.Properties.Resources.resources
+D:\Univer\Programarea_Retea\Laborator4_Voice\obj\Debug\Laborator4_Voice.csproj.GenerateResource.cache
+D:\Univer\Programarea_Retea\Laborator4_Voice\obj\Debug\Laborator4_Voice.csproj.CoreCompileInputs.cache
+D:\Univer\Programarea_Retea\Laborator4_Voice\obj\Debug\Laborator4_Voice.csproj.CopyComplete
+D:\Univer\Programarea_Retea\Laborator4_Voice\obj\Debug\Laborator4_Voice.exe
+D:\Univer\Programarea_Retea\Laborator4_Voice\obj\Debug\Laborator4_Voice.pdb

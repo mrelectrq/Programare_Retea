@@ -29,7 +29,7 @@ namespace Laborator5_Voice_Client
         {
             InitializeComponent();
             // _socket = new UDPSocket();
-            ep = new IPEndPoint(IPAddress.Parse("192.168.56.1"), 8082);
+            ep = new IPEndPoint(IPAddress.Parse("192.168.0.108"), 8082);
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
             socket.Bind(ep);
             waveSource = new WaveIn();
@@ -41,8 +41,6 @@ namespace Laborator5_Voice_Client
         private void _audioSource_DataAvailable(object sender, WaveInEventArgs e)
         {
             socket.SendTo(e.Buffer,serverEP);
-            //_socket.Send(e.Buffer);
-            //  Buffer(e.Buffer);
         }
 
         private void Form1_Load(object sender, EventArgs e)

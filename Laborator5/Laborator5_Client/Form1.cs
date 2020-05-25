@@ -15,6 +15,7 @@ namespace Laborator5_Client
 {
     public partial class Form1 : Form
     {
+        
         private readonly TcpClient client = new TcpClient();
         private NetworkStream stream;
         private int portNumber;
@@ -70,6 +71,11 @@ namespace Laborator5_Client
         private void timer1_Tick(object sender, EventArgs e)
         {
             SendDesktopImage();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

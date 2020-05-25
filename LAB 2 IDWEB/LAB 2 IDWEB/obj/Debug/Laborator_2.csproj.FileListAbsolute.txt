@@ -1,0 +1,24 @@
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\LAB 2 IDWEB.exe.config
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\LAB 2 IDWEB.exe
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\LAB 2 IDWEB.pdb
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\BouncyCastle.Crypto.dll
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\Mail.dll
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\MailKit.dll
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\MimeKit.dll
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\Mail.xml
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\MailKit.xml
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\bin\Debug\MimeKit.xml
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\Laborator_2.csprojAssemblyReference.cache
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB_2_IDWEB.Form1.resources
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB_2_IDWEB.Form2.resources
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB_2_IDWEB.Form3.resources
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB_2_IDWEB.Form4.resources
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB_2_IDWEB.LogIn.resources
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB_2_IDWEB.Messages.resources
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB_2_IDWEB.Properties.Resources.resources
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB_2_IDWEB.Unauthorization.resources
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\Laborator_2.csproj.GenerateResource.cache
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\Laborator_2.csproj.CoreCompileInputs.cache
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\Laborator_2.csproj.CopyComplete
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB 2 IDWEB.exe
+D:\Univer\Programarea_Retea\LAB 2 IDWEB\LAB 2 IDWEB\obj\Debug\LAB 2 IDWEB.pdb
